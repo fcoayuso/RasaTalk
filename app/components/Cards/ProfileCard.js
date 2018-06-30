@@ -68,14 +68,14 @@ function ProfileCard({ ...props }) {
         )}
         {!loading &&
           subtitle !== undefined && (
-          <Typography
-            component="h6"
-            className={classes.cardSubtitle}
-            style={{ minHeight: '24px' }}
-          >
-            {subtitle}
-          </Typography>
-        )}
+            <Typography
+              component="h6"
+              className={classes.cardSubtitle}
+              style={{ minHeight: '24px' }}
+            >
+              {subtitle}
+            </Typography>
+          )}
 
         {loading && (
           <ContentLoader
@@ -91,10 +91,10 @@ function ProfileCard({ ...props }) {
 
         {!loading &&
           agent !== undefined && (
-          <Typography component="h4" className={classes.cardTitle}>
-            {agent}
-          </Typography>
-        )}
+            <Typography component="h4" className={classes.cardTitle}>
+              {agent}
+            </Typography>
+          )}
 
         {loading && (
           <ContentLoader
@@ -111,10 +111,10 @@ function ProfileCard({ ...props }) {
 
         {!loading &&
           description !== undefined && (
-          <Typography component="p" className={classes.cardDescription}>
-            {description}
-          </Typography>
-        )}
+            <Typography component="p" className={classes.cardDescription}>
+              {description}
+            </Typography>
+          )}
       </CardContent>
       <CardActions className={`${classes.textAlign} ${classes.cardActions}`}>
         {footer}

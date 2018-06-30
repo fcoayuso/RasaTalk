@@ -66,9 +66,9 @@ const validate = values => {
 
 export class RegisterForm extends React.PureComponent {
   render() {
-    const { handleSubmit, registerError, valid, loading } = this.props;
+    const { registerError, valid, loading } = this.props;
     return (
-      <form onSubmit={handleSubmit}>
+      <form>
         <CardContent>
           <Sub varient="subheading">Lets get you signed up</Sub>
 
@@ -113,13 +113,8 @@ export class RegisterForm extends React.PureComponent {
 
         <StyledActions>
           {!loading && (
-            <Button
-              size="small"
-              color="primary"
-              type="submit"
-              disabled={!valid}
-            >
-              Register
+            <Button size="small" color="primary" type="submit" disabled={true}>
+              Closed
             </Button>
           )}
           {loading && <CircularProgress />}
